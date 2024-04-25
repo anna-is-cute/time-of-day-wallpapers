@@ -38,7 +38,6 @@ async fn main() -> anyhow::Result<()> {
     proxy.evaluate_script(&format!(
         r#"
             var allDesktops = desktops();
-            print (allDesktops);
             for (i = 0; i < allDesktops.length; i++) {{
                 d = allDesktops[i];
                 d.wallpaperPlugin = "org.kde.image";
