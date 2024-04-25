@@ -46,7 +46,7 @@ async fn main() -> anyhow::Result<()> {
                     "org.kde.image",
                     "General"
                 );
-                d.writeConfig("Image", "file://{}")
+                d.writeConfig("Image", "file://{}");
             }}
         "#,
         wallpaper.path.to_string_lossy(),
