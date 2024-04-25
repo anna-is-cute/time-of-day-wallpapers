@@ -21,6 +21,15 @@ name = 'kde'
 # if "any" is specified, it will only be used if no other time matched
 # you may also specify multiple times like so
 #    during = ['nautical dawn', 'civil dawn']
+# you may specify pairs of solar elevations as well.
+# please note that if the elevations are positive, they will only be considered
+# while the sun is rising. negative elevations will likewise only be considered
+# while the sun is setting.
+#    during = [340, 15] # between rising elevations of -20 degrees to 15 degrees
+#    during = [-345, -20] # between setting elevations of 15 degrees to -20
+#                         # degrees
+# you may mix and match
+#    during = [340, 15, 'civil dusk', 150, 160]
 during = 'civil dawn'
 # path to a file to be set as the wallpaper
 path = '/path/to/dawn/wallpaper.jpg'
