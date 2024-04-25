@@ -1,0 +1,38 @@
+[location]
+# use your own latitude/longitude here
+# can use google maps to look up an address and check the url for the lat/lon
+latitude = 40.7254655
+longitude = -74.2985106
+
+[method]
+name = 'kde'
+
+[[wallpaper]]
+# acceptable values are:
+#     astronomical dawn
+#     nautical dawn
+#     civil dawn
+#     day
+#     civil dusk
+#     nautical dusk
+#     astronomical dusk
+#     night
+#     any
+# if "any" is specified, it will only be used if no other time matched
+# you may also specify multiple times like so
+#    during = ['nautical dawn', 'civil dawn']
+during = 'civil dawn'
+# path to a file to be set as the wallpaper
+path = '/path/to/dawn/wallpaper.jpg'
+
+[[wallpaper]]
+during = 'day'
+path = '/path/to/daytime/wallpaper.jpg'
+
+[[wallpaper]]
+during = 'civil dusk'
+path = '/path/to/dusk/wallpaper.jpg'
+
+[[wallpaper]]
+during = 'any'
+path = '/path/to/night/wallpaper.jpg'
